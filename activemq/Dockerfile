@@ -10,6 +10,7 @@ RUN wget http://www.us.apache.org/dist/activemq/5.12.0/apache-activemq-5.12.0-bi
     mv /opt/apache-activemq-5.12.0/lib /opt/activemq/lib && \
     mv /opt/apache-activemq-5.12.0/webapps /opt/activemq/webapps && \
 		rm /opt/apache-activemq-5.12.0 -rf && \
+		rm activemq.tar.gz && \
 		chmod +x /opt/activemq/bin/activemq 
 
 CMD ["/opt/activemq/bin/activemq" , "console"]
